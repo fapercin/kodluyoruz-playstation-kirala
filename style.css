@@ -1,0 +1,91 @@
+@font-face {
+    font-family: myFont;
+    src: url(Inter-Regular.woff2);
+}
+
+
+body {
+    margin: 0;
+    font-family: myFont,Arial, Helvetica, sans-serif;
+    background: linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(216, 216, 216,0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header>nav>a {
+    padding: 10px;
+    background-color:white;
+    color: black;
+    text-decoration: none;
+    border-radius:5px;
+}
+
+header>nav>a:hover {
+    color: white;
+    background-color: #269bca;
+}
+
+.you-are-here {
+    color:white!important;
+    background-color:#269bca!important;
+}
+
+.urun-liste {
+    padding: 0;
+}
+
+.urun-liste>li {
+    background-color:#b3dfed;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10%;
+    margin-top: 20px;
+    text-align: center;
+    list-style-type: none;
+    border-radius:20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.25rem;
+}
+
+.urun-liste>li:hover {
+    background-color:#7ad0ec;
+}
+
+.urun-liste>li>img {
+    height: 75%;
+    width: 75%;
+}
+
+section {
+    
+    margin:0px;
+    padding-top:30px;
+    padding-bottom: 200px;
+
+}
+
+/* mobil */
+
+@media only screen and (max-width:600px) {
+
+    .urun-liste>li {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5%;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+}
